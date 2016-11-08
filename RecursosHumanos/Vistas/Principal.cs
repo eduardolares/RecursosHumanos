@@ -33,5 +33,10 @@ namespace RecursosHumanos.Vistas
         {
             cambiarVista(new Personal());
         }
+
+        private void eventosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cambiarVista(new Evento());
+        }
     }
 }

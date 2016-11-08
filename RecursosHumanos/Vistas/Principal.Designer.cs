@@ -60,20 +60,21 @@
             // personalToolStripMenuItem
             // 
             this.personalToolStripMenuItem.Name = "personalToolStripMenuItem";
-            this.personalToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.personalToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.personalToolStripMenuItem.Text = "Personal";
             this.personalToolStripMenuItem.Click += new System.EventHandler(this.personalToolStripMenuItem_Click);
             // 
             // eventosToolStripMenuItem
             // 
             this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
-            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.eventosToolStripMenuItem.Text = "Eventos";
+            this.eventosToolStripMenuItem.Click += new System.EventHandler(this.eventosToolStripMenuItem_Click);
             // 
             // nominaToolStripMenuItem
             // 
             this.nominaToolStripMenuItem.Name = "nominaToolStripMenuItem";
-            this.nominaToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.nominaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nominaToolStripMenuItem.Text = "Nomina";
             // 
             // _PanelVista
