@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RecursosHumanos.Vistas.UserControls
 {
-    public partial class AgregarEvento : UserControl
+    public partial class Asignar_Personal : UserControl
     {
-        public AgregarEvento()
+        public Asignar_Personal()
         {
             InitializeComponent();
         }

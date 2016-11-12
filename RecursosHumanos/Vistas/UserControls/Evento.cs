@@ -17,29 +17,15 @@ namespace RecursosHumanos.Vistas.UserControls
             InitializeComponent();
         }
 
-  
+        Principal cV = new Principal();
 
         private void _ButtonAgregarEvento_Click(object sender, EventArgs e)
         {
-            _PanelFormularioEvento.Visible = true;
-            _ButtonAccionEvento.Text = "Agregar";
-            limpiarFormulario();
-        }
+            cV.cambiarVista(new Asignar_Personal());
+            
+                
+         }
 
-        public void limpiarFormulario()
-        {
-            foreach (Control c in _PanelFormularioEvento.Controls)
-            {
-                if (c is TextBox)
-                {
-                    ((TextBox)c).Clear();
-                    ((TextBox)c).Enabled = true;
-                }
-                else if (c is ComboBox)
-                {
-                    ((ComboBox)c).Text = "";
-                }
-            }
-        }
+      
     }
 }

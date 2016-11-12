@@ -20,9 +20,13 @@ namespace RecursosHumanos.Vistas
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
+           
+           
         }
 
-        void cambiarVista(UserControl vista)
+
+
+        public void cambiarVista(UserControl vista)
         {
             _PanelVista.Controls.Remove(VistaActual);
             VistaActual = vista;

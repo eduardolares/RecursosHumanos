@@ -15,10 +15,9 @@ C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\bin\Debug\Recurso
 C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.csprojResolveAssemblyReference.cache
 C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.Properties.Resources.resources
 C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.Vistas.Principal.resources
-C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.Vistas.UserControls.AgregarPersonal.resources
 C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.Vistas.UserControls.Personal.resources
 C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.csproj.GenerateResource.Cache
 C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.exe
 C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.pdb
 C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.Vistas.UserControls.Evento.resources
-C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.Vistas.UserControls.AgregarEvento.resources
+C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.Vistas.UserControls.Asignar_Personal.resources

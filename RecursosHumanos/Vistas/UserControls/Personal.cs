@@ -16,7 +16,7 @@ namespace RecursosHumanos.Vistas.UserControls
         enum Accion { Agregar, Modificar}
         Accion _Accion;
         _AgregarPersonal agregar_Personal = new _AgregarPersonal();
-        AgregarPersonal _AP = new AgregarPersonal();
+        
         string r;
         public static int id;
 
