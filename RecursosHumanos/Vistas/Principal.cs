@@ -14,16 +14,17 @@ namespace RecursosHumanos.Vistas
     public partial class Principal : Form
     {
 
-        static UserControl VistaActual;
+        public static UserControl VistaActual;
+        
 
         public Principal()
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
            
-           
-        }
+          
 
+        }
 
 
         public void cambiarVista(UserControl vista)
@@ -36,11 +37,28 @@ namespace RecursosHumanos.Vistas
         private void personalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cambiarVista(new Personal());
+            this.Text = "Personal";
+            
+            
         }
 
         private void eventosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cambiarVista(new Evento());
+            this.Text = "Eventos";
+           
+        }
+
+        private void asistenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cambiarVista(new Asistencia());
+            this.Text = "Asistencia"; 
+        }
+
+        private void nominaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cambiarVista(new Nomina());
+            this.Text = "Nomina";
         }
     }
 }

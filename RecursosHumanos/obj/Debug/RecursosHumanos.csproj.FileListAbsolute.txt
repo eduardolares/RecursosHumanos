@@ -21,3 +21,5 @@ C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\Recurso
 C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.pdb
 C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.Vistas.UserControls.Evento.resources
 C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.Vistas.UserControls.Asignar_Personal.resources
+C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.Vistas.UserControls.Asistencia.resources
+C:\Users\ramon\Documents\Repos\RecursosHumanos\RecursosHumanos\obj\Debug\RecursosHumanos.Vistas.UserControls.Nomina.resources

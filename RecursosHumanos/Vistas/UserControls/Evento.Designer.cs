@@ -88,9 +88,9 @@
             this._LabelEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._LabelEvento.Location = new System.Drawing.Point(131, 15);
             this._LabelEvento.Name = "_LabelEvento";
-            this._LabelEvento.Size = new System.Drawing.Size(92, 30);
+            this._LabelEvento.Size = new System.Drawing.Size(105, 30);
             this._LabelEvento.TabIndex = 0;
-            this._LabelEvento.Text = "Evento";
+            this._LabelEvento.Text = "Eventos";
             // 
             // _TableLayoutPanelEvento
             // 

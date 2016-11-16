@@ -33,6 +33,7 @@
             this.personalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nominaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this._PanelVista = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +53,8 @@
             this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.personalToolStripMenuItem,
             this.eventosToolStripMenuItem,
-            this.nominaToolStripMenuItem});
+            this.nominaToolStripMenuItem,
+            this.asistenciaToolStripMenuItem});
             this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
             this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.opcionesToolStripMenuItem.Text = "Opciones";
@@ -76,6 +78,14 @@
             this.nominaToolStripMenuItem.Name = "nominaToolStripMenuItem";
             this.nominaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nominaToolStripMenuItem.Text = "Nomina";
+            this.nominaToolStripMenuItem.Click += new System.EventHandler(this.nominaToolStripMenuItem_Click);
+            // 
+            // asistenciaToolStripMenuItem
+            // 
+            this.asistenciaToolStripMenuItem.Name = "asistenciaToolStripMenuItem";
+            this.asistenciaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.asistenciaToolStripMenuItem.Text = "Asistencia";
+            this.asistenciaToolStripMenuItem.Click += new System.EventHandler(this.asistenciaToolStripMenuItem_Click);
             // 
             // _PanelVista
             // 
@@ -110,5 +120,6 @@
         private System.Windows.Forms.ToolStripMenuItem eventosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nominaToolStripMenuItem;
         private System.Windows.Forms.Panel _PanelVista;
+        private System.Windows.Forms.ToolStripMenuItem asistenciaToolStripMenuItem;
     }
 }

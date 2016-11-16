@@ -66,11 +66,23 @@
     <Compile Include="Vistas\UserControls\Asignar_Personal.Designer.cs">
       <DependentUpon>Asignar_Personal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\UserControls\Asistencia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\UserControls\Asistencia.Designer.cs">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\UserControls\Evento.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Vistas\UserControls\Evento.Designer.cs">
       <DependentUpon>Evento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\UserControls\Nomina.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vistas\UserControls\Nomina.Designer.cs">
+      <DependentUpon>Nomina.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\UserControls\Personal.cs">
       <SubType>UserControl</SubType>
@@ -93,8 +105,14 @@
     <EmbeddedResource Include="Vistas\UserControls\Asignar_Personal.resx">
       <DependentUpon>Asignar_Personal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\UserControls\Asistencia.resx">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\UserControls\Evento.resx">
       <DependentUpon>Evento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\UserControls\Nomina.resx">
+      <DependentUpon>Nomina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\UserControls\Personal.resx">
       <DependentUpon>Personal.cs</DependentUpon>

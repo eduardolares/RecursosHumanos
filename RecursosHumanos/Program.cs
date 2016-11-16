@@ -7,11 +7,13 @@ using RecursosHumanos.Vistas;
 
 namespace RecursosHumanos
 {
+   
     static class Program
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
+        
         [STAThread]
         static void Main()
         {
@@ -20,5 +22,7 @@ namespace RecursosHumanos
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Principal());
         }
+
+       
     }
 }
