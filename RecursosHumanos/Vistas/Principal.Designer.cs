@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,13 +41,22 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inicioToolStripMenuItem,
             this.opcionesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1344, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // inicioToolStripMenuItem
+            // 
+            this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.inicioToolStripMenuItem.Text = "Inicio";
+            this.inicioToolStripMenuItem.Click += new System.EventHandler(this.inicioToolStripMenuItem_Click);
             // 
             // opcionesToolStripMenuItem
             // 
@@ -62,28 +72,28 @@
             // personalToolStripMenuItem
             // 
             this.personalToolStripMenuItem.Name = "personalToolStripMenuItem";
-            this.personalToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.personalToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.personalToolStripMenuItem.Text = "Personal";
             this.personalToolStripMenuItem.Click += new System.EventHandler(this.personalToolStripMenuItem_Click);
             // 
             // eventosToolStripMenuItem
             // 
             this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
-            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.eventosToolStripMenuItem.Text = "Eventos";
             this.eventosToolStripMenuItem.Click += new System.EventHandler(this.eventosToolStripMenuItem_Click);
             // 
             // nominaToolStripMenuItem
             // 
             this.nominaToolStripMenuItem.Name = "nominaToolStripMenuItem";
-            this.nominaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nominaToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.nominaToolStripMenuItem.Text = "Nomina";
             this.nominaToolStripMenuItem.Click += new System.EventHandler(this.nominaToolStripMenuItem_Click);
             // 
             // asistenciaToolStripMenuItem
             // 
             this.asistenciaToolStripMenuItem.Name = "asistenciaToolStripMenuItem";
-            this.asistenciaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.asistenciaToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.asistenciaToolStripMenuItem.Text = "Asistencia";
             this.asistenciaToolStripMenuItem.Click += new System.EventHandler(this.asistenciaToolStripMenuItem_Click);
             // 
@@ -121,5 +131,6 @@
         private System.Windows.Forms.ToolStripMenuItem nominaToolStripMenuItem;
         private System.Windows.Forms.Panel _PanelVista;
         private System.Windows.Forms.ToolStripMenuItem asistenciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
     }
 }

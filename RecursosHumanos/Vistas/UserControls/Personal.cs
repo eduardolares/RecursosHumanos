@@ -25,6 +25,8 @@ namespace RecursosHumanos.Vistas.UserControls
             InitializeComponent();
             agregar_Personal.MostrarPersonal(_DGV_Personal);
             Dock = DockStyle.Fill;
+            _PanelControl.BackColor = Color.FromArgb(0, 0, 0, 0);
+            _PanelFormulario.BackColor = Color.FromArgb(0, 0, 0, 0);
 
         }
 
@@ -53,13 +55,13 @@ namespace RecursosHumanos.Vistas.UserControls
             switch (_Accion)
             {
                 case Accion.Agregar:                    
-                    MessageBox.Show(agregar_Personal.agregar_Personal(_TextBoxNombre.Text, Convert.ToInt32(_TextBoxEdad.Text), _TextBoxTelefono.Text, _ComboBoxSexo.Text, _TextBoxCorreo.Text, _TextBoxDireccion.Text));
+                    MessageBox.Show(agregar_Personal.agregar_Personal(_TextBoxNombre.Text, Convert.ToInt32(_TextBoxEdad.Text), _TextBoxTelefono.Text, _ComboBoxSexo.Text, _TextBoxCorreo.Text, _TextBoxDireccion.Text, _ComboBoxTipoPersonal.Text));
                     agregar_Personal.MostrarPersonal(_DGV_Personal);
                     limpiarFormulario();
                     break;
 
                 case Accion.Modificar:
-                    MessageBox.Show(agregar_Personal.modificar_Personal(_TextBoxNombre.Text, Convert.ToInt32(_TextBoxEdad.Text), _TextBoxTelefono.Text, _ComboBoxSexo.Text, _TextBoxCorreo.Text, _TextBoxDireccion.Text));
+                    MessageBox.Show(agregar_Personal.modificar_Personal(_TextBoxNombre.Text, Convert.ToInt32(_TextBoxEdad.Text), _TextBoxTelefono.Text, _ComboBoxSexo.Text, _TextBoxCorreo.Text, _TextBoxDireccion.Text, _ComboBoxTipoPersonal.Text));
                     agregar_Personal.MostrarPersonal(_DGV_Personal);
                     limpiarFormulario();                    
                     break;
@@ -102,7 +104,7 @@ namespace RecursosHumanos.Vistas.UserControls
                     if (c.OwningColumn == _DGV_Personal.Columns["nombre"])
                     {
                         DataRow row;
-                        row = agregar_Personal.dt.Rows[c.RowIndex];
+                        row = agregar_Personal.dt_personal.Rows[c.RowIndex];
                         id = (int)row["id_personal"];
                         _TextBoxNombre.Text = row["nombre"].ToString();
                         _TextBoxEdad.Text = row["edad"].ToString();
@@ -110,6 +112,7 @@ namespace RecursosHumanos.Vistas.UserControls
                         _ComboBoxSexo.Text = row["sexo"].ToString();
                         _TextBoxCorreo.Text = row["correo"].ToString();
                         _TextBoxDireccion.Text = row["direccion"].ToString();
+                        _ComboBoxTipoPersonal.Text = row["tipo_Personal"].ToString();
 
                     }
                 }
@@ -128,6 +131,11 @@ namespace RecursosHumanos.Vistas.UserControls
                     cargar_Formulario();
                 }
             }
+
+        }
+
+        private void _TextBoxCorreo_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -20,7 +20,11 @@ namespace RecursosHumanos
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal());
+            var result = (new Login()).ShowDialog();
+            if (result == DialogResult.Yes)
+            {
+                Application.Run(new Principal());
+            }
         }
 
        

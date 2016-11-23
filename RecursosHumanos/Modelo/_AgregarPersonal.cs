@@ -20,9 +20,11 @@ namespace RecursosHumanos.Modelo
         SqlCommand cmd;
 
         SqlDataAdapter da;
-        public DataTable dt;
+        public DataTable dt_personal;
+        public DataTable dt_puesto;
 
-        public string agregar_Personal(string Nombre, int Edad, string Telefono, string Sexo, string Correo, string Direccion)
+
+        public string agregar_Personal(string Nombre, int Edad, string Telefono, string Sexo, string Correo, string Direccion, string tipo_personal)
         {
             
 
@@ -31,7 +33,7 @@ namespace RecursosHumanos.Modelo
             string insert = "Se Inserto Correctamente";
             try
             {
-                cmd = new SqlCommand("INSERT INTO Personal VALUES('" + Nombre + "','" + Edad + "'," + Telefono + ",'" + Sexo + "','" + Correo + "','" + Direccion + "')", cn.cn);
+                cmd = new SqlCommand("INSERT INTO Personal VALUES('" + Nombre + "','" + Edad + "'," + Telefono + ",'" + Sexo + "','" + Correo + "','" + Direccion + "', '" + tipo_personal +"')", cn.cn);
                 
                 cmd.ExecuteNonQuery();
             }
@@ -49,14 +51,9 @@ namespace RecursosHumanos.Modelo
             try
             {
                 da = new SqlDataAdapter("SELECT * from Personal", cn.cn);
-                dt = new DataTable();
-                da.Fill(dt);
-                dgv.DataSource = dt;
-                
-                
-
-
-
+                dt_personal = new DataTable();
+                da.Fill(dt_personal);
+                dgv.DataSource = dt_personal;
             }
             catch (Exception ex)
             {
@@ -65,21 +62,14 @@ namespace RecursosHumanos.Modelo
             cn.cn.Close();
         }
 
-        //public string id_personal()
-        //{
-        //    cn.cn.Open();
-            
-        //    return ;
-        //}
-
-        public string modificar_Personal(string Nombre, int Edad, string Telefono, string Sexo, string Correo, string Direccion)
+        public string modificar_Personal(string Nombre, int Edad, string Telefono, string Sexo, string Correo, string Direccion, string tipo_personal)
         {
             Personal personal = new Personal();
             cn.cn.Open();
             string insert = "Se modifico Correctamente";
             try
             {
-                cmd = new SqlCommand("UPDATE Personal set nombre = '" + Nombre + "', edad = '" + Edad + "', telefono = " + Telefono + ", sexo = '" + Sexo + "', correo = '" + Correo + "', direccion = '" + Direccion + "'  where id_personal = '" + Personal.id +"'  ", cn.cn);
+                cmd = new SqlCommand("UPDATE Personal set nombre = '" + Nombre + "', edad = '" + Edad + "', telefono = " + Telefono + ", sexo = '" + Sexo + "', correo = '" + Correo + "', direccion = '" + Direccion + "', tipo_Personal = '" + tipo_personal + "'  where id_personal = '" + Personal.id +"'  ", cn.cn);
 
                 cmd.ExecuteNonQuery();
             }
@@ -91,7 +81,23 @@ namespace RecursosHumanos.Modelo
             return insert;
         }
 
-
-
+        public void llenar_combo(ComboBox combo)
+        {
+            cn.cn.Open();
+            try
+            {
+                da = new SqlDataAdapter("SELECT id_puesto, puesto from Cargo", cn.cn);
+                dt_puesto = new DataTable();
+                da.Fill(dt_puesto);
+                combo.DataSource = dt_puesto;
+                combo.ValueMember = "id_puesto";
+               //combo.DisplayMember = "puesto";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo mostrar la tabla" + ex.ToString());
+            }
+            cn.cn.Close();
+        }
     }
 }

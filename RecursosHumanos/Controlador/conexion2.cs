@@ -12,11 +12,8 @@ namespace RecursosHumanos.Controlador
     class conexion2
     {
 
-       public SqlConnection cn = new System.Data.SqlClient.SqlConnection("Data Source=192.168.1.3;User ID=yanez; Password=yanez; Initial Catalog=RH");
-        SqlCommand cmd;
-
-        SqlDataAdapter da;
-        DataTable dt;
+       //public SqlConnection cn = new System.Data.SqlClient.SqlConnection("Data Source=192.168.1.2;User ID=yanez; Password=yanez; Initial Catalog=club");
+         public SqlConnection cn = new System.Data.SqlClient.SqlConnection("Data Source=.; Initial Catalog=club; Integrated Security=True");
 
                 
 

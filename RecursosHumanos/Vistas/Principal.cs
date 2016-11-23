@@ -21,8 +21,11 @@ namespace RecursosHumanos.Vistas
         {
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
-           
-          
+            _PanelVista.Controls.Remove(VistaActual);
+            VistaActual = new Inicio();
+            _PanelVista.Controls.Add(VistaActual);
+            this.Text = "Inicio";
+
 
         }
 
@@ -59,6 +62,12 @@ namespace RecursosHumanos.Vistas
         {
             cambiarVista(new Nomina());
             this.Text = "Nomina";
+        }
+
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cambiarVista(new Inicio());
+            this.Text = "Inicio";
         }
     }
 }
